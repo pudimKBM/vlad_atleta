@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inscriçao Campeonato</title>
+  <link rel="shortcut icon" href="https://material.io/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+  <link rel="stylesheet" href="bundle.css">
+</head>
+<body>
+  <header class="crane-header">
+    Inscriçao Campeonato
+  </header>
+
+  <main class="crane-main">
+    <form method="post" action="http://localhost:5000/dev-atletaco/us-central1/addTeam" id="crane-shipping-form">
+      <div class="crane-row">
+        <div class="crane-field">
+          <div class="mdc-text-field">
+            <input class="mdc-text-field__input" id="crane-name-input"  name="teamName" type="text" required autofocus>
+            <label class="mdc-floating-label" for="crane-name-input">
+              Nome do time 
+            </label>
+            <div class="mdc-line-ripple"></div>
+          </div>
+        </div>
+      </div>
+      <div class="crane-row">
+        <div class="crane-field">
+          <div class="mdc-select">
+            <select class="mdc-select__native-control" id="crane-state-input" name="Category" required>
+              <option value="1" >Masculino- Iniciante(até 1 ano de pratica)</option>
+              <option value="2" >Masculino- Amador(acima de 1 ano de pratica)</option>
+              <option value="3" >Feminino- Iniciante(até 1 ano de pratica)</option>
+              <option value="4" >Feminino- Amador(acima de  1 ano de pratica)</option>
+            </select>
+            <label class="mdc-floating-label" for="crane-state-input">
+            
+            </label>
+            <div class="mdc-line-ripple"></div>
+          </div>
+        </div>
+      </div>
+      <h3> Info Jogador 1 </h3>
+      <div class="crane-row">
+        <div class="crane-field">
+          <div class="mdc-text-field">
+            <input name="Player1_name" class="mdc-text-field__input" id="crane-city-input" type="text" required>
+            <label class="mdc-floating-label" for="crane-city-input">
+              Nome Jogador 1 
+            </label>
+            <div class="mdc-line-ripple"></div>
+          </div>
+        </div>
+        <div class="crane-field">
+          <div class="mdc-text-field">
+            <input name="Player1_email" class="mdc-text-field__input" id="crane-city-input" type="text" required>
+            <label class="mdc-floating-label" for="crane-city-input">
+              Email Jogador 1
+            </label>
+            <div class="mdc-line-ripple"></div>
+          </div>
+        </div>
+      </div>
+       <div class="crane-row">
+        <div class="crane-field">
+          <div class="mdc-text-field">
+            <input name="Player1_cel""" class="mdc-text-field__input" id="crane-city-input" type="text" required>
+            <label class="mdc-floating-label" for="crane-city-input">
+              Celular Jogador 1 (DDD + Numero)
+            </label>
+            <div class="mdc-line-ripple"></div>
+          </div>
+        </div>
+        <div class="crane-field">
+          <div class="mdc-text-field">
+            <input name="Player1_CPF" class="mdc-text-field__input" id="crane-city-input" type="text" required>
+            <label class="mdc-floating-label" for="crane-city-input">
+              CPF Jogador 1
+            </label>
+            <div class="mdc-line-ripple"></div>
+          </div>
+        </div>
+      </div>
+      <h3> Info Jogador 2 </h3>
+      <div class="crane-row">
+        <div class="crane-field">
+          <div class="mdc-text-field">
+            <input name="Player2_name" class="mdc-text-field__input" id="crane-city-input" type="text" required>
+            <label class="mdc-floating-label" for="crane-city-input">
+              Nome Jogador 2 
+            </label>
+            <div class="mdc-line-ripple"></div>
+          </div>
+        </div>
+        <div class="crane-field">
+          <div class="mdc-text-field">
+            <input name="Player2_email" class="mdc-text-field__input" id="crane-city-input" type="text" required>
+            <label class="mdc-floating-label" for="crane-city-input">
+              Email Jogador 2
+            </label>
+            <div class="mdc-line-ripple"></div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="crane-row">
+        <div class="crane-field">
+          <div class="mdc-text-field">
+            <input name="Player2_cel" class="mdc-text-field__input" id="crane-city-input" type="text" required>
+            <label class="mdc-floating-label" for="crane-city-input">
+              Celular Jogador 2 (DDD + Numero)
+            </label>
+            <div class="mdc-line-ripple"></div>
+          </div>
+        </div>
+        <div class="crane-field">
+          <div class="mdc-text-field">
+            <input name="Player2_CPF" class="mdc-text-field__input" id="crane-city-input" type="text" required>
+            <label class="mdc-floating-label" for="crane-city-input">
+              CPF Jogador 2
+            </label>
+            <div class="mdc-line-ripple"></div>
+          </div>
+        </div>
+       
+        </div>
+      </div>
+      <div class="crane-row" >
+      <h3>Seg a Sex </h3>
+      <div class="mdc-form-field" >
+          <div class="mdc-checkbox">
+            <input name="disp_sem" type="checkbox"
+                   class="mdc-checkbox__native-control"
+                   id="checkbox-1" value="manha"/>
+            <div class="mdc-checkbox__background">
+              <svg class="mdc-checkbox__checkmark"
+                   viewBox="0 0 24 24">
+                <path class="mdc-checkbox__checkmark-path"
+                      fill="none"
+                      d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+              </svg>
+              <div class="mdc-checkbox__mixedmark"></div>
+            </div>
+          </div>
+          <label for="checkbox-1">Manhã</label>
+          <div class="mdc-checkbox">
+            <input type="checkbox" name="disp_sem"
+                   class="mdc-checkbox__native-control"
+                   id="checkbox-1" value="tarde" />
+            <div class="mdc-checkbox__background">
+              <svg class="mdc-checkbox__checkmark"
+                   viewBox="0 0 24 24">
+                <path class="mdc-checkbox__checkmark-path"
+                      fill="none"
+                      d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+              </svg>
+              <div class="mdc-checkbox__mixedmark"></div>
+            </div>
+          </div>
+          <label for="checkbox-1">Tarde</label>
+          <div class="mdc-checkbox">
+            <input type="checkbox" name="disp_sem"
+                   class="mdc-checkbox__native-control"
+                   id="checkbox-1" value="noite"/>
+            <div class="mdc-checkbox__background">
+              <svg class="mdc-checkbox__checkmark"
+                   viewBox="0 0 24 24">
+                <path class="mdc-checkbox__checkmark-path"
+                      fill="none"
+                      d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+              </svg>
+              <div class="mdc-checkbox__mixedmark"></div>
+            </div>
+          </div>
+          <label for="checkbox-1">Noite</label>
+          </div>
+      </div>
+      <div class="crane-row" >
+       
+      <h3>Sab e Dom </h3>
+        <div class="mdc-form-field">
+          <div class="mdc-checkbox">
+            <input type="checkbox" value="manha"
+                   class="mdc-checkbox__native-control"
+                   id="checkbox-1" name="disp_fds"/>
+            <div class="mdc-checkbox__background">
+              <svg class="mdc-checkbox__checkmark"
+                   viewBox="0 0 24 24">
+                <path class="mdc-checkbox__checkmark-path"
+                      fill="none"
+                      d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+              </svg>
+              <div class="mdc-checkbox__mixedmark"></div>
+            </div>
+          </div>
+          <label for="checkbox-1">Manhã</label>
+          <div class="mdc-checkbox">
+            <input type="checkbox" name="disp_fds"
+                   class="mdc-checkbox__native-control"
+                   id="checkbox-1" value="tarde"/>
+            <div class="mdc-checkbox__background">
+              <svg class="mdc-checkbox__checkmark"
+                   viewBox="0 0 24 24">
+                <path class="mdc-checkbox__checkmark-path"
+                      fill="none"
+                      d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+              </svg>
+              <div class="mdc-checkbox__mixedmark"></div>
+            </div>
+          </div>
+          <label for="checkbox-1">Tarde</label>
+          <div class="mdc-checkbox">
+            <input type="checkbox" name="disp_fds"
+                   class="mdc-checkbox__native-control"
+                   id="checkbox-1" value="noite"/>
+            <div class="mdc-checkbox__background">
+              <svg class="mdc-checkbox__checkmark"
+                   viewBox="0 0 24 24">
+                <path class="mdc-checkbox__checkmark-path"
+                      fill="none"
+                      d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+              </svg>
+              <div class="mdc-checkbox__mixedmark"></div>
+            </div>
+          </div>
+          <label for="checkbox-1">Noite</label>
+        </div>
+        </div>
+      <div class="crane-row">
+        <div class="crane-field">
+          <div class="mdc-text-field">
+            <input class="mdc-text-field__input" name="obs" id="crane-name-input" type="text" required autofocus>
+            <label class="mdc-floating-label" for="crane-name-input">
+              Alguma observação quanto à disponibilidade?
+            </label>
+            <div class="mdc-line-ripple"></div>
+          </div>
+        </div>
+      </div>
+      <div class="crane-row">
+        <div class="crane-field">
+          <div class="mdc-text-field">
+            <input class="mdc-text-field__input" name="Club_sugestion" id="crane-name-input" type="text" required autofocus>
+            <label class="mdc-floating-label" for="crane-name-input" name="">
+              Gostaria de sugerir um clube? 
+            </label>
+            <div class="mdc-line-ripple"></div>
+          </div>
+        </div>
+      </div>
+      <div class="crane-row">
+        <div class="crane-field">
+          <div class="mdc-text-field">
+            <input class="mdc-text-field__input" name="General_sugestion" id="crane-name-input" type="text" required autofocus>
+            <label class="mdc-floating-label" for="crane-name-input" name="">
+              Dúvidas, Críticas e Sugestões
+            </label>
+            <div class="mdc-line-ripple"></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="crane-row crane-row--submit">
+        <button type="submit" class="mdc-button mdc-button--raised">Save</button>
+      </div>
+    </form>
+  </main>
+
+  <script src="bundle.js" async></script>
+</body>
+</html>
